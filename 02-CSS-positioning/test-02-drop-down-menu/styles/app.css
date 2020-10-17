@@ -48,9 +48,9 @@ body {
 
 .nav li:hover > .sub-menu {
   /* BEGIN (write your solution here) */
-  display: block;
   position: absolute;
   left: 0;
+  display: block;
 
   /* END */
   width: max-content;
