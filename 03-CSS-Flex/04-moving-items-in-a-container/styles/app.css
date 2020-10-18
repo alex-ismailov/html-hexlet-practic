@@ -1,0 +1,13 @@
+/* BEGIN (write your solution here) */
+.catalog {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.catalog-item {
+  display: flex;
+  flex-direction: column;
+  width: 350;
+}
+
+/* END */
