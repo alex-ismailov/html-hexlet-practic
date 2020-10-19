@@ -4,3 +4,4 @@
 
 Конечным результатом выполнения упражнения станет следующий вид галереи:
 
+![](https://github.com/alex-ismailov/html-hexlet-practic/blob/main/03-CSS-Flex/test-01-tiled-gallery/tiled-gallary%20.png)
