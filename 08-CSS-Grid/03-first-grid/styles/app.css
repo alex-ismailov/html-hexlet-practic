@@ -14,7 +14,7 @@ h1 {
 .grid-header {
   /* BEGIN (write your solution here) */
   display: grid;
-  grid-template-columns: max-content 1fr 200px;
+  grid-template-columns: max-content auto 200px;
 
   /* END */
 }
