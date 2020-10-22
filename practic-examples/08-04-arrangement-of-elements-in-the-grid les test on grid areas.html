@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .grid-12 {
+      display: grid;
+      grid-template-areas:  "header     header     header header header      header"
+                            "left-aside main       main   main   main        right-aside"
+                            ".          footer     footer footer footer      .";
+    }
+
+    .grid-element {
+      padding: 10px 20px;
+    }
+
+    .bg-gray {
+      background: #717790;
+    }
+
+    .bg-red {
+      background: #ff3c41;
+    }
+
+    .bg-blue {
+      background: #0ebeff;
+    }
+
+    .bg-green {
+      background: green;
+    }
+
+    .bg-orange {
+      background: orange;
+    }
+
+    .grid-header {
+      grid-area: header;
+    }
+
+    .grid-left-aside {
+      grid-area: left-aside;
+    }
+
+    .grid-main {
+      grid-area: main;
+    }
+
+    .grid-right-aside {
+      grid-area: right-aside;
+    }
+
+    .grid-footer {
+      grid-area: footer;
+    }
+  </style>
+</head>
+<body class="grid-12">
+  <header class="grid-element grid-header bg-gray">Шапка сайта</header>
+  <aside class="grid-element grid-left-aside bg-red">Левый сайдбар</aside>
+  <main class="grid-element grid-main bg-blue">Основной контент Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, praesentium. Laborum, architecto. Nostrum numquam, aspernatur deserunt, veritatis sunt saepe a nisi non natus perspiciatis fugit ratione iure! Enim rerum quaerat incidunt, corrupti esse labore saepe nulla qui aspernatur illum odit iure eos similique quibusdam? Perferendis omnis voluptates porro sint aliquid id deleniti natus iste est. Quasi dolorem recusandae optio labore? Eius architecto mollitia aspernatur iure nam deserunt reprehenderit error a ipsa libero beatae pariatur aliquam quasi, maxime at autem doloremque accusantium rem provident aut laudantium sunt? Qui odio repellendus, voluptatum, delectus assumenda quidem architecto suscipit iste, quasi repudiandae quae neque? Quo a blanditiis inventore velit eos. Sunt iusto praesentium, ut doloribus quod, voluptates dicta, iure nihil veniam suscipit nemo consectetur blanditiis animi vero dolore deserunt quaerat inventore itaque soluta saepe doloremque quam? Quas eligendi soluta quia officiis sapiente molestiae impedit molestias inventore pariatur veritatis, minus, labore at officia dolore excepturi, sunt hic! Cumque iure a accusantium eligendi incidunt necessitatibus, temporibus recusandae id ex provident. Necessitatibus reiciendis aliquam sit nisi commodi et nostrum, distinctio autem doloribus dolorem, voluptatibus nesciunt cum, harum illum fuga impedit consectetur dolores totam repudiandae soluta eaque provident ipsam labore? Vero neque deserunt unde dolore ut ipsam dignissimos distinctio, nemo soluta debitis alias! Libero pariatur laborum eligendi. Architecto nobis voluptatibus aliquid, perspiciatis laudantium harum? Numquam, aliquid ut consectetur aut nostrum ab veritatis ipsam dolores culpa corporis dolorem velit fugiat soluta est aliquam placeat atque laborum, cumque totam. Quae corrupti suscipit ut, officiis distinctio blanditiis et natus tempore exercitationem. Exercitationem facilis, voluptas illo temporibus debitis consequuntur voluptatibus doloribus tempora repellat alias veritatis dolorem necessitatibus nam, animi tempore! Numquam excepturi explicabo a deleniti dolore fuga magni doloribus ipsum! Tenetur quaerat soluta dolorum odit molestiae sit quam saepe sint. Voluptas debitis sequi consequatur expedita, cupiditate accusantium ipsa est labore sapiente atque.</main>
+  <aside class="grid-element grid-right-aside bg-green">Правый сайдбар</aside>
+  <footer class="grid-element grid-footer bg-orange">Футтер</footer>
+</body>
+</html>
