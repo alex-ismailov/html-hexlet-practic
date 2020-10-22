@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .grid-12 {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, 50px);
+    }
+
+    .grid-element {
+      padding: 10px 20px;
+    }
+
+    .bg-gray {
+      background: #717790;
+    }
+
+    .bg-red {
+      background: #ff3c41;
+    }
+
+    .bg-blue {
+      background: #0ebeff;
+    }
+
+    .bg-green {
+      background: green;
+    }
+
+    .bg-orange {
+      background: orange;
+    }
+
+    .grid-header {
+      grid-column: 1 / -1;
+      grid-row: 1 / span 2;
+    }
+
+    .grid-left-aside {
+      grid-column: 1 / 3;
+      grid-row: 3 / -1;
+    }
+
+    .grid-main {
+      grid-column: 3 / 11;
+      grid-row: 3 / 10;
+    }
+
+    .grid-right-aside {
+      grid-column: 11 / -1;
+      grid-row: 3 / 10;
+    }
+
+    .grid-footer {
+      grid-column: 1 / -1;
+      grid-row: 10 / -1;
+    }
+  </style>
+</head>
+<body class="grid-12">
+  <header class="grid-element grid-header bg-gray">Шапка сайта</header>
+  <aside class="grid-element grid-left-aside bg-red">Левый сайдбар</aside>
+  <main class="grid-element grid-main bg-blue">Основной контент</main>
+  <aside class="grid-element grid-right-aside bg-green">Правый сайдбар</aside>
+  <footer class="grid-element grid-footer bg-orange">Футтер</footer>
+</body>
+</html>
