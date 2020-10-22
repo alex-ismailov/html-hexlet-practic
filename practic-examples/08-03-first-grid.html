@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .grid-12 {
+      display: grid;
+      background: #b9f;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .bg-gray {
+      background: #717790;
+    }
+
+    .bg-red {
+      background: #ff3c41;
+    }
+
+    .bg-blue {
+      background: #0ebeff;
+    }
+  </style>
+</head>
+<body>
+  <section class='grid-12'>
+    <div class="grid-element bg-gray"></div>
+    <div class="grid-element bg-red"></div>
+    <div class="grid-element bg-blue"></div>
+  </section>
+</body>
+</html>
