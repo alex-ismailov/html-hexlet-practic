@@ -1,0 +1,17 @@
+@mixin link {
+  // BEGIN (write your solution here)
+  .text-link {
+    color: white;
+	text-decoration: none;
+    
+    span {
+      font-weight: bold;
+    }
+    
+    &:hover {
+      color: blue;
+	  text-decoration: underline;
+    }
+  }
+  // END
+}
