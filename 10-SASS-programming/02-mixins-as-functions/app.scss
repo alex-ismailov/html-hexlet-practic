@@ -1,0 +1,7 @@
+// BEGIN (write your solution here)
+@mixin bg-gradient($c1, $c2, $c3) {
+  background: $c2;
+  background: linear-gradient(90deg, $c1 0%, $c2 35%, $c3 100%);
+}
+
+// END
