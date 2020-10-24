@@ -2,6 +2,7 @@
 @mixin  opacity-transition-1s {
   -moz-transition: opacity 1s;
   -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 @mixin link-hover {
