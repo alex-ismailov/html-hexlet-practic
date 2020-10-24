@@ -1,0 +1,13 @@
+$grid-width: 45px;
+$gutter-width: 15px;
+
+// BEGIN (write your solution here)
+@function grid-container-width($column-amount) {
+  @if($column-amount <= 0) {
+    @return  grid-container-width(1);
+  } @else {
+  	@return  (($grid-width + $gutter-width) * $column-amount) - $gutter-width;  
+  }
+ }
+
+// END
