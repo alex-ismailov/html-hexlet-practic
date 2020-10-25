@@ -1,0 +1,12 @@
+// $BEGIN (write your solution here)
+@function fib-iter($a, $b, $count) {
+  @if($count == 0) {
+    @return $b;
+  }
+  @return fib-iter($a + $b, $a, $count: $count - 1);
+}
+
+@function fib($num) {
+  @return fib-iter(1, 0, $num); 
+}
+// END
