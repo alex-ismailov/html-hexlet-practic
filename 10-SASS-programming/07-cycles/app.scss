@@ -1,0 +1,22 @@
+$theme-colors: (
+  "primary":    ("light": "#F5E6E8", "dark": "#1B262C"),
+  "secondary":  ("light": "#D5C6E0", "dark": "#0F4C75"),
+  "success":    ("light": "#AAA1C8", "dark": "#3282B8"),
+  "info":       ("light": "#967AA1", "dark": "#F9F9F9"),
+  "warning":    ("light": "#192A51", "dark": "#BBE1FA"),
+);
+
+// BEGIN (write your solution here)
+@mixin colors($colors, $tone: 'light') {
+  @each $color-name, $color-value in $colors {
+    $color: unquote(map-get($color-value, $tone));
+    
+    .bg-#{$color-name} {
+      background: $color;
+    }
+    .text-#{$color-name} {
+      color: $color;
+    }
+  }
+}
+// END
