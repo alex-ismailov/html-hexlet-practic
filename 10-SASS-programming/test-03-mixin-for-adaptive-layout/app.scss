@@ -1,0 +1,23 @@
+$breakpoints: (
+  breakpoint-small: 768px,
+  breakpoint-medium: 992px,
+  breakpoint-large: 1200px
+);
+
+// BEGIN (write your solution here)
+@mixin media($breakpoint: 'small', $max-breakpoint: null) {
+  @if($breakpoint == 'custom') {
+    @media(max-width: $max-breakpoint) {
+      & {
+        @content;
+      }
+    }
+  } @else {
+    @media(max-width: map-get($breakpoints, 'breakpoint-#{$breakpoint}')) {
+      & {
+        @content;
+      }
+    }
+  }
+}
+// END
