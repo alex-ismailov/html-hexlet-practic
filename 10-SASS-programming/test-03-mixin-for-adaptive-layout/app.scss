@@ -7,16 +7,12 @@ $breakpoints: (
 // BEGIN (write your solution here)
 @mixin media($breakpoint: 'small', $max-breakpoint: null) {
   @if($breakpoint == 'custom') {
-    @media(max-width: $max-breakpoint) {
-      & {
-        @content;
-      }
+    @media screen and (max-width: $max-breakpoint) {
+      @content;
     }
   } @else {
-    @media(max-width: map-get($breakpoints, 'breakpoint-#{$breakpoint}')) {
-      & {
-        @content;
-      }
+    @media screen and (max-width: map-get($breakpoints, 'breakpoint-#{$breakpoint}')) {
+      @content;
     }
   }
 }
