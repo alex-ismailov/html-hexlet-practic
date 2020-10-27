@@ -1,0 +1,14 @@
+$rem-base: 16px; // = 1rem
+
+// BEGIN (write your solution here)
+@function px-to-rem($args) {
+  $acc: ();
+
+  @each $arg in $args {
+    $rem-value:  '#{($arg / $rem-base)}rem';
+    $acc: append($acc, $rem-value);
+  }
+
+  @return #{$acc};
+}
+// END
