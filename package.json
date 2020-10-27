@@ -22,6 +22,7 @@
     "jest-image-snapshot": "^4.2.0",
     "jest-puppeteer": "^4.4.0",
     "puppeteer": "^5.4.0",
+    "sass": "^1.27.0",
     "sass-true": "^6.0.1",
     "stylelint": "^13.7.2",
     "stylelint-config-standard": "^20.0.0"
