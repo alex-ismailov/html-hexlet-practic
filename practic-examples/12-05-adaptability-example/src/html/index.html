@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <% for (css in htmlWebpackPlugin.files.css) { %>
+    <link 
+    href="<%= htmlWebpackPlugin.files.css[css] %>"
+    rel="stylesheet">
+  <% } %>
+  <title>html template</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header"></div>
+    <main class="main">
+      <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-5 row-cols-xl-6">
+          <div class="col gallery-item-wrapper">
+            <article class="gallery-item">
+              <h3>name</h3>
+              <img src="../assets/img/homer100x100.jpg" alt="">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, commodi.</p>
+            </article class="">
+          </div>
+          <div class="col gallery-item-wrapper">
+            <article class="gallery-item">
+              <h3>name</h3>
+              <img src="../assets/img/homer100x100.jpg" alt="">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, commodi.</p>
+            </article class="">
+          </div>
+          <div class="col gallery-item-wrapper">
+            <article class="gallery-item">
+              <h3>name</h3>
+              <img src="../assets/img/homer100x100.jpg" alt="">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, commodi.</p>
+            </article class="">
+          </div>
+          <div class="col gallery-item-wrapper">
+            <article class="gallery-item">
+              <h3>name</h3>
+              <img src="../assets/img/homer100x100.jpg" alt="">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, commodi.</p>
+            </article class="">
+          </div>
+          <div class="col gallery-item-wrapper">
+            <article class="gallery-item">
+              <h3>name</h3>
+              <img src="../assets/img/homer100x100.jpg" alt="">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, commodi.</p>
+            </article class="">
+          </div>
+          <div class="col gallery-item-wrapper">
+            <article class="gallery-item">
+              <h3>name</h3>
+              <img src="../assets/img/homer100x100.jpg" alt="">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, commodi.</p>
+            </article class="">
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <% for (index in htmlWebpackPlugin.files.js) { %>
+    <script src="<%= htmlWebpackPlugin.files.js[index] %>" type="text/javascript"></script>
+  <% } %>
+</body>
+</html>
