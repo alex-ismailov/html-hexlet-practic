@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <% for (css in htmlWebpackPlugin.files.css) { %>
+    <link 
+    href="<%= htmlWebpackPlugin.files.css[css] %>"
+    rel="stylesheet">
+  <% } %>
+  <title>html template</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <header class="header row">
+      <div class="col-md-2 logo">Logo</div>
+      <nav class="col nav-color">
+        <ul class="main-menu">
+          <li>Gallery</li>
+          <li>About us</li>
+          <li>Contacts</li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <div class="container">
+    <main class="row">
+      <div class="col-md-4 aside">
+        <p>Хекслет — практические курсы по программированию. Мы помогаем новичкам стать профессиональными программистами, а опытным разработчикам получать новые знания и расти профессионально.</p>
+      </div>
+      <div class="col-md-8 content">
+        <p>Мы считаем, что настоящий программист должен понимать, как работает компьютер, и обладать вычислительным мышлением. Он должен видеть проблему, а не задание. Должен уметь анализировать и рассуждать на уровне проблемы и выше, а не только на уровне кода.</p>
+        <p>При сегодняшнем обилии учебных материалов, курсов и книг, главный вопрос, который встает перед новичком, это не «где учиться?», а «что и в каком порядке учить?». Существует множество мнений по этому поводу. Кто-то советует начинать с математики, кто-то советует конкретные языки и технологии.</p>
+      </div>      
+    </main>
+  </div>
+
+  <% for (index in htmlWebpackPlugin.files.js) { %>
+    <script src="<%= htmlWebpackPlugin.files.js[index] %>" type="text/javascript"></script>
+  <% } %>
+</body>
+</html>

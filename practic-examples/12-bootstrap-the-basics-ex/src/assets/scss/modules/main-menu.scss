@@ -1,0 +1,11 @@
+.main-menu {
+  display: flex;
+  justify-content: start;
+
+  li {
+    padding: 0 15px;
+    border: 1px #000 solid;
+    margin-left: 5px;
+    box-sizing: border-box;
+  }
+}
